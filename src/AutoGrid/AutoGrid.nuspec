@@ -1,18 +1,30 @@
-<?xml version="1.0"?>
-<package >
-  <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <licenseUrl>https://github.com/kmcginnes/SpicyTaco.AutoGrid/blob/master/license</licenseUrl>
-    <projectUrl>https://github.com/kmcginnes/SpicyTaco.AutoGrid</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/kmcginnes/SpicyTaco.AutoGrid/master/icon/icon_61620.png</iconUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>Minor bug fixes and tech debt payback. Row and column spans should work better.</releaseNotes>
-    <copyright>Copyright 2017</copyright>
-    <tags>WPF Grid Control SpicyTaco AutoGrid ToolKit tool kit StackPanel UI</tags>
-  </metadata>
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<!--https://docs.microsoft.com/en-us/nuget/reference/nuspec-->
+	<metadata>
+		<id>TqkLibrary.AutoGrid</id>
+		<version>1.2.29</version>
+		<title>SpicyTaco.AutoGrid</title>
+		<authors>SpicyTaco</authors>
+		<description>nuget for net5.0-windows7.0 or higher</description>
+		<tags>WPF Grid Control SpicyTaco AutoGrid ToolKit tool kit StackPanel UI</tags>
+		<readme>docs\README.md</readme>
+		<dependencies>
+			<group targetFramework="net462">
+			</group>
+			<group targetFramework="net5.0-windows7.0">
+			</group>
+			<group targetFramework="net6.0-windows7.0">
+			</group>
+			<group targetFramework="net7.0-windows7.0">
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="..\..\README.md" target="docs\" />
+		<file src="bin\Release\**\$id$.dll" target="lib\" />
+		<file src="bin\Release\**\$id$.pdb" target="lib\" />
+		<file src="bin\Release\**\$id$.xml" target="lib\" />
+		<file src="**\*.cs" target="src\" exclude="obj\**\*.cs;bin\**\*.cs"/>
+	</files>
 </package>
